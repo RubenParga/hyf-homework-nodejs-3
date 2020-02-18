@@ -125,6 +125,8 @@ describe('User RESTful', () => {
 
     });
 
+    cy.request('/users').its('body').should('deep.eq', []);
+    
   });
 
 });
