@@ -17,6 +17,7 @@ app.get('/user/:id', (req, res) => {
     res.json(user);
 });
 
+
 //POST id{0}
 app.post('/user', (req, res) => {    
     users.push({ id: 0 });    
